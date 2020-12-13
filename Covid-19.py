@@ -45,11 +45,6 @@ while True:
         print("Kamu termasuk kasus POSITIF TANPA GEJALA")
         print("Disarankan untuk melakukan test PCR untuk memastikan kondisi kamu, dan lakukan isolasi mandiri")
         print("="*100)
-      elif(nilai[1] == 1):
-        print("="*100)
-        print("Kamu termasuk kategori RESIKO RENDAH")
-        print("Meski berisiko rendah, namun jangan lengah, tetap patuhi protokol kesehatan.")
-        print("="*100)
       elif(nilai[2] or nilai[2] & nilai[3] == 1):
         print("="*100)
         print("Kamu termasuk kategori KONTAK ERAT")
@@ -70,7 +65,13 @@ while True:
         print("Kamu termasuk kategori KASUS POSITIF DENGAN GEJALA")
         print("Disarankan untuk melakukan test PCR untuk memastikan kondisi kamu, dan lakukan isolasi mandiri")
         print("="*100)
-      elif(nilai[1] & nilai[2] == 1 or nilai[1] & nilai[2] & nilai[3] == 1 ):
+      elif(nilai[1] & nilai[2] == 1 ):
+        print("="*100)
+        print("Kamu termasuk kasus SUSPEK atau PROBABLE")
+        print("Jika gejala kamu berat dan sesak nafas hebat maka kamu termasuk kasus PROBABLE, jika tidak maka\n"
+        " kemungkinan masuk kriteria SUSPEK")
+        print("="*100)
+      elif(nilai[0] == 0 & nilai[1] & nilai[2] & nilai[3] == 1 ):
         print("="*100)
         print("Kamu termasuk kasus SUSPEK atau PROBABLE")
         print("Jika gejala kamu berat dan sesak nafas hebat maka kamu termasuk kasus PROBABLE, jika tidak maka\n"
