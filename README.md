@@ -1,13 +1,3 @@
 # DASPRO_COVID-19
 
-UTS DASAR PEMOGRAMAN
-
-NAMA  : AHMAD ZAKARIA FATHONI
-
-NIM   : 3.34.20.4.01
-
-KELAS : IK-1E
-
-PRODI : D3-TEKNIK INFORMATIKA
-
-Program Sederhana Deteksi Covid-19
+A python program code to detect covid patients based on the patient's experience
